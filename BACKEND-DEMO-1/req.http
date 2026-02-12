@@ -1,0 +1,76 @@
+GET http://127.0.0.1:3000/user-api/users
+
+###
+
+POST http://127.0.0.1:3000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"pavan",
+    "password":"pavan",
+    "age":19
+}
+
+###
+PUT http://127.0.0.1:3000/user-api/users/697f9dfc94ebbcd05ce00743
+Content-Type: application/json
+
+{
+    "username":"pavan",
+    "password":"pavan",
+    "age":20
+}
+
+###
+//get user by id
+GET http://localhost:3000/user-api/users/697f9dfc94ebbcd05ce00743
+
+
+###
+DELETE http://127.0.0.1:3000/user-api/users/697f9dfc94ebbcd05ce00743
+//------------------------------------------------------------------
+//------------------PRODUCT APIs REQ FILE-------------------------
+
+###
+GET http://127.0.0.1:3000/product-api/products
+
+
+###
+POST http://127.0.0.1:3000/product-api/products
+Content-Type: application/json
+
+{
+    "productname":"Shoes-1",
+    "price":1000
+}
+
+###
+PUT http://127.0.0.1:3000/product-api/products/697f9f0f94ebbcd05ce0074b
+Content-Type: application/json
+
+{
+    "productname":"Shoes-2",
+    "price":2000
+}
+
+###
+DELETE http://127.0.0.1:3000/product-api/products/697f9f0f94ebbcd05ce0074b
+
+//-----------------------User authentication APIs REQ FILE--------------------
+
+###
+POST http://127.0.0.1:3000/user-api/auth
+Content-Type: application/json
+
+{
+    "username":"pavan",
+    "password":"pavan"
+}
+
+//================TEST PROTECTED ROUTE WITH TOKEN======================
+// Step 1: Login first to get token cookie
+// Execute the auth request above first, then execute this test request
+
+###
+GET http://127.0.0.1:3000/user-api/test
+

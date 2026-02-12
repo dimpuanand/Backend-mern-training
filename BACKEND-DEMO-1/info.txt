@@ -1,0 +1,20 @@
+mongooose helps us in reducing code
+because it has easy feature to check the data before storing in the backend
+
+if we manually wants to check , we sill use if else block for every api call
+
+but mongooose doesn't need all those
+it just need required, minlength, maxlength
+
+We use insert one method, insertmany method or sasve method to store the data in database
+
+at the time of insertion and updating, validation is required
+but at the time of reading, validation is not required
+
+
+we need to provide the default error handler middleware
+
+how it handles?
+express will ivoke the error handler middleware when express sense an error
+
+

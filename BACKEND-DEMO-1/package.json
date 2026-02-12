@@ -1,0 +1,21 @@
+{
+    "name": "backend-demo-1",
+    "version": "1.0.0",
+    "description": "A simple backend demo application",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"error: no test script specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "dependencies": {
+        "bcryptjs": "^3.0.3",
+        "cookie-parser": "^1.4.7",
+        "express": "^5.2.1",
+        "jsonwebtoken": "^9.0.3",
+        "mongoose": "^9.1.5"
+    }
+}
